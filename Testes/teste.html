@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Teste de Paleta</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f5f5f5; /* fundo */
+        color: #222222; /* texto */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+      }
+
+      h1 {
+        color: #2d1b4e;
+      }
+
+      .palette {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+        width: 100%;
+        max-width: 800px;
+      }
+
+      .color {
+        border-radius: 12px;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .primary {
+        background: #2c1810;
+      }
+      .secondary {
+        background: #8b5cf6;
+      }
+      .accent {
+        background: #eab308;
+      }
+      .bg {
+        background: #f5f5f4;
+        color: #1c1917;
+      }
+      .text {
+        background: #1c1917;
+      }
+
+      .label {
+        margin-top: 10px;
+        font-size: 14px;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <!---
+Primária: #1E3A8A (azul marinho — confiança, estabilidade)
+Secundária: #0284C7 (azul céu — frescor, tecnologia)
+Destaque: #F97316 (laranja — energia e ação)
+Fundo: #F8FAFC (cinza claro — limpo e profissional)
+Texto: #1F2937 (cinza escuro — fácil leitura) -->
+
+    <!--
+Primária: #014737 (verde profundo — natureza, confiança)
+Secundária: #10B981 (verde jade — frescor, vitalidade)
+Destaque: #FBBF24 (amarelo ouro — calor, luz do sol)
+Fundo: #F9FAF9 (off-white — elegante e clean)
+Texto: #111827 (quase preto — legibilidade máxima)-->
+
+    <!-- 
+Primária: #0F172A (preto-azulado — moderno e elegante)
+Secundária: #3B82F6 (azul médio — confiança e tecnologia)
+Destaque: #22D3EE (ciano vibrante — frescor e inovação)
+Fundo: #F4F4F5 (cinza claro neutro)
+Texto: #1C1917 (marrom escuro-neutro — leitura confortável) -->
+    <h1>Paleta de Cores</h1>
+    <div class="palette">
+      <div class="color primary">
+        #9D4EDD
+        <div class="label">Primária</div>
+      </div>
+      <div class="color secondary">
+        #00C896
+        <div class="label">Secundária</div>
+      </div>
+      <div class="color accent">
+        #2D1B4E
+        <div class="label">Destaque extra</div>
+      </div>
+      <div class="color bg">
+        #F5F5F5
+        <div class="label">Fundo</div>
+      </div>
+      <div class="color text">
+        #222222
+        <div class="label">Texto</div>
+      </div>
+    </div>
+  </body>
+</html>

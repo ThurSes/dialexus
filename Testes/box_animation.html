@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .box {
+      height: 250px;
+      width: 250px;
+      text-align: center;
+      border: 2px solid white;
+      padding: 100px 0;
+      color: white;
+      background-color: rgb(0, 0, 0);
+      font-size: 1.875rem; /* text-3xl equivalent */
+      box-sizing: border-box;
+      position: absolute;
+      transition: all 1s;
+    }
+  </style>
+  <body>
+    <div
+      class="w-full mx-auto h-screen pb-300 [perspective:1000px] bg-slate-900"
+    >
+      <div
+        class="relative sm:h-[250px] sm:w-[250px] xs:h-[150px] xs:w-[150px] mx-auto top-1/2 transform -translate-y-1/2 [transform-style:preserve-3d] animate-roll"
+      >
+        <div
+          class="box bg-cyan-400 sm:[transform:translateZ(125px)] xs:[transform:translateZ(75px)]"
+        >
+          Traduza
+        </div>
+        <div
+          class="box bg-cyan-400 sm:[transform:translateZ(-125px)] xs:[transform:translateZ(-75px)]"
+        >
+          Comunique
+        </div>
+        <div
+          class="box bg-cyan-400 sm:right-[125px] xs:right-[75px] [transform:rotateY(-90deg)]"
+        >
+          Entenda
+        </div>
+        <div
+          class="box bg-cyan-400 sm:left-[125px] xs:left-[75px] [transform:rotateY(90deg)]"
+        >
+          Expresse
+        </div>
+        <div
+          class="box bg-cyan-400 sm:bottom-[125px] xs:bottom-[75px] [transform:rotateX(90deg)]"
+        >
+          Leia
+        </div>
+        <div
+          class="box bg-cyan-400 sm:top-[125px] xs:top-[75px] [transform:rotateX(-90deg)]"
+        >
+          Converse
+        </div>
+      </div>
+    </div>
+    <div cottomlass="h-999 w-100"></div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          screens: {
+            xs: "320px",
+            sm: "480px",
+            md: "768px",
+            lg: "976px",
+            xl: "1440px",
+          },
+          extend: {
+            keyframes: {
+              roll: {
+                "0%": { transform: "rotateX(45deg) rotateY(-45deg)" },
+                "25%": { transform: "rotateX(-45deg) rotateY(-45deg)" },
+                "50%": { transform: "rotateX(45deg) rotateY(45deg)" },
+                "75%": { transform: "rotateX(-45deg) rotateY(45deg)" },
+                "100%": { transform: "rotateX(45deg) rotateY(-45deg)" },
+              },
+            },
+            animation: {
+              roll: "roll 5s infinite",
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>
