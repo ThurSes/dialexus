@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cinquentarei</title>
+    <link rel="shortcut icon" href="favicon_400x400.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libertinus+Math&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body id="body">
+    <div class="icon" id="icon">
+      <button onclick="botaoIcon()" id="btnIcon">
+        <img src="MoedaPratas.png" alt="Logo" class="permIcon" />
+      </button>
+    </div>
+    <div class="wrapper">
+      <div
+        class="section data active"
+        onclick="mostrar('data'); mudarCor('#007bbf')"
+      >
+        Data
+      </div>
+      <div
+        class="section traje inactive"
+        onclick="mostrar('traje'); mudarCor('#00a3e8')"
+      >
+        Traje
+      </div>
+      <div
+        class="section presente inactive"
+        onclick="mostrar('presente'); mudarCor('#6ec6ff')"
+      >
+        Presente
+      </div>
+      <div
+        class="section presenca inactive"
+        onclick="mostrar('presenca'); mudarCor('#b3e5fc')"
+      >
+        Presença
+      </div>
+    </div>
+
+    <div class="content" id="conteudo">
+      <h2>🎉 Festa de 50 anos – Sidney Curcio</h2>
+      <p>
+        <strong>Data:</strong> 04 de outubro de 2025<br />
+        <strong>Horário:</strong> Das 20h à 1h<br />
+        <strong>Local:</strong> Clube Primeiro de Maio – Av. Portugal, 79,
+        Centro, Santo André/SP
+      </p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
