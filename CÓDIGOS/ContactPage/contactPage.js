@@ -9,7 +9,7 @@ function enviarForm() {
     .then((response) => {
       if (response.ok) {
         Swal.fire({
-          title: "Presença Confirmada!",
+          title: "Obrigado pela mensagem!",
           icon: "success",
         });
       } else {
