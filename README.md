@@ -52,6 +52,7 @@ Nesse projeto, usamos as seguintes ferramentas:
 - JS para a funcionalidade da página 
 - [Tailwind CSS](https://tailwindcss.com/) - Framework CSS
 - [Form Submit](https://formsubmit.co/) - Biblioteca de envio de formulários
+- [Sweet Alert](https://sweetalert2.github.io) - Biblioteca Javascript
 
 ### Tutorial de acesso
 
