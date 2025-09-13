@@ -58,4 +58,4 @@ Nesse projeto, usamos as seguintes ferramentas:
 
 ### Tutorial de acesso
 
-Disponível [aqui](https://thurses.github.io/dialexus/)
+[Disponível aqui](https://thurses.github.io/dialexus/)
