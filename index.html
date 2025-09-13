@@ -14,8 +14,60 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="icon" type="image/png" href="./IMAGENS/Shortcut.png" />
+    <style>
+      .circle-wrapper {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+      .circle {
+        position: absolute;
+        bottom: -500px;
+        opacity: 0;
+        animation: subir 2s ease-out forwards infinite;
+        animation-delay: 2s;
+      }
+
+      .circle1 {
+        animation-delay: 1s;
+      }
+      .circle2 {
+        animation-delay: 1.5s;
+      }
+      .circle3 {
+        animation-delay: 2s;
+      }
+      .circle4 {
+        animation-delay: 2.5s;
+      }
+      .circle5 {
+        animation-delay: 3s;
+      }
+      .circle6 {
+        animation-delay: 3.5s;
+      }
+      .circle7 {
+        animation-delay: 4s;
+      }
+      .circle8 {
+        animation-delay: 4.5s;
+      }
+      .circle9 {
+        animation-delay: 5s;
+      }
+      .circle10 {
+        animation-delay: 0.5s;
+      }
+
+      @keyframes subir {
+        to {
+          bottom: 50px; /* ou onde você quer que eles fiquem */
+          opacity: 1;
+        }
+      }
+    </style>
   </head>
-  <body>
+  <body style="min-height: 100vh">
     <!-- 
      primaria = slate-900 
      secondary = blue-500 
@@ -54,18 +106,22 @@
         </div>
       </div>
     </nav>
-      <li class="circle circle1"></li>
-      <li class="circle circle2"></li>
-      <li class="circle circle3"></li>
-      <li class="circle circle4"></li>
-      <li class="circle circle5"></li>
-      <li class="circle circle6"></li>
-      <li class="circle circle7"></li>
-      <li class="circle circle8"></li>
-      <li class="circle circle9"></li>
-      <li class="circle circle10"></li>
-    </ul>
-    <section class="bg-slate-900 text-white py-20 pb-40">
+    <div class="circle-wrapper relative">
+      <ul class="absolute top-0 left-0 w-full h-full">
+        <li class="circle circle1"></li>
+        <li class="circle circle2"></li>
+        <li class="circle circle3"></li>
+        <li class="circle circle4"></li>
+        <li class="circle circle5"></li>
+        <li class="circle circle6"></li>
+        <li class="circle circle7"></li>
+        <li class="circle circle8"></li>
+        <li class="circle circle9"></li>
+        <li class="circle circle10"></li>
+      </ul>
+    </div>
+
+    <section class="bg-slate-900 text-white py-20">
       <div class="container mx-auto flex flex-col md:flex-row items-center">
         <div class="md:w-1/2 text-center md:text-left md:mb-0 px-6">
           <h1 class="text-7xl font-extrabold leading-tight mb-6 mt-26 pt-20">
@@ -82,9 +138,9 @@
       </div>
     </section>
     <!-- Footer -->
-    <footer class="bg-zinc-100 py-8 mt-10">
+    <footer class="bg-zinc-100 mt-10">
       <div
-        class="container mx-auto flex flex-col md:flex-row justify-between items-center px-8 pt-8"
+        class="container mx-auto flex flex-col md:flex-row justify-between items-center pt-8"
       >
         <div class="flex flex-col items-center md:items-start">
           <img
@@ -139,7 +195,7 @@
           <h4 class="mb-3 text-2xl font-semibold text-stone-950">
             Redes sociais
           </h4>
-          <div class="flex space-x-6">
+          <div class="flex">
             <a
               href="https://github.com/ThurSes"
               class="text-stone-950 hover:text-blue-500 text-4xl"
