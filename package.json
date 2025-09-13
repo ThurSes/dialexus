@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@google/genai": "^1.19.0",
+    "@speechmatics/auth": "^0.1.0",
+    "@speechmatics/real-time-client": "^7.0.2",
+    "axios": "^1.12.1",
+    "express": "^5.1.0",
+    "fs-extra": "^11.3.1",
+    "mic": "^2.1.2",
+    "openai": "^5.20.2",
+    "ws": "^8.18.3"
+  }
+}
