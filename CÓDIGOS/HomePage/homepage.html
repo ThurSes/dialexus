@@ -17,31 +17,52 @@
      fundo = zinc-100 
      text = stone-950 
      -->
-    <nav class="bg-white p-2px w-full rounded-lg">
-      <div class="container mx-auto flex justify-between items-center">
-        <a href="CÓDIGOS/HomePage/homepage.html"
-          ><img
-            class=""
-            src="../../IMAGENS/TextoDoLado.png"
-            style="width: 130px; height: 130px"
-            alt="Logo"
-        /></a>
-        <div>
-          <a href="../HomePage/homepage.html" class="px-4 hover:underline"
-            >Início</a
+    <header id="header">
+      <nav class="bg-white p-2px w-full rounded-lg" id="navbar">
+        <div class="container mx-auto flex justify-between items-center">
+          <a href="CÓDIGOS/HomePage/homepage.html"
+            ><img
+              class=""
+              src="../../IMAGENS/TextoDoLado.png"
+              style="width: 130px; height: 130px"
+              alt="Logo"
+          /></a>
+          <button id="hamburguer" class="md:hidden text-3xl">
+            <i class="fa-solid fa-bars" id="hamburguer-icon"></i>
+          </button>
+
+          <ul
+            id="nav-list"
+            class="hidden md:flex space-x-4 flex-col md:flex-row items-center transition-all duration-300"
           >
-          <a href="../ServicePage/servicepage.html" class="px-4 hover:underline"
-            >Produtos e serviços</a
-          >
-          <a href="../AboutUs/aboutUspage.html" class="px-4 hover:underline"
-            >Sobre nós</a
-          >
-          <a href="../ContactPage/contactpage.html" class="px-4 hover:underline"
-            >Contato</a
-          >
+            <li>
+              <a href="../HomePage/homepage.html" class="px-4 hover:underline"
+                >Início</a
+              >
+            </li>
+            <li>
+              <a
+                href="../ServicePage/servicepage.html"
+                class="px-4 hover:underline"
+                >Produtos e serviços</a
+              >
+            </li>
+            <li>
+              <a href="../AboutUs/aboutUspage.html" class="px-4 hover:underline"
+                >Sobre nós</a
+              >
+            </li>
+            <li>
+              <a
+                href="../ContactPage/contactpage.html"
+                class="px-4 hover:underline"
+                >Contato</a
+              >
+            </li>
+          </ul>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </header>
       <li class="circle circle1"></li>
       <li class="circle circle2"></li>
       <li class="circle circle3"></li>
@@ -72,22 +93,24 @@
     <!-- Footer -->
     <footer class="bg-zinc-100 py-8 mt-10">
       <div
-        class="container mx-auto flex flex-col md:flex-row justify-between items-center px-8 pt-8"
+        class="container mx-auto flex flex-col gap-10 md:flex-row md:justify-between md:items-start px-6 pt-8"
       >
-        <div class="flex flex-col items-center md:items-start">
+        <div
+          class="flex flex-col items-center md:items-start text-center md:text-left"
+        >
           <img
             src="../../IMAGENS/LogoPrincipal.png"
             alt="Logo Street Communication"
-            class="w-40 h-auto ml-30"
+            class="w-40 h-auto mb-4"
           />
-          <p
-            class="text-center md:text-left text-gray-600 text-lg font-semibold"
-          >
+          <p class="text-gray-600 text-lg font-semibold">
             Viaje sem ter que se preocupar com comunicação!
           </p>
         </div>
 
-        <div class="self-center">
+        <div
+          class="flex flex-col items-center md:items-start text-center md:text-left"
+        >
           <h4 class="mb-3 text-2xl font-semibold text-stone-950">
             Nossas páginas
           </h4>
@@ -96,38 +119,47 @@
               <a
                 href="../HomePage/homepage.html"
                 class="hover:underline text-lg"
-                >Início</a
               >
+                Início
+              </a>
             </li>
             <li>
               <a
                 href="../ServicePage/servicepage.html"
                 class="hover:underline text-lg"
-                >Produtos e serviços</a
               >
+                Produtos e serviços
+              </a>
             </li>
             <li>
               <a
                 href="../AboutUs/aboutUspage.html"
                 class="hover:underline text-lg"
-                >Sobre nós</a
               >
+                Sobre nós
+              </a>
             </li>
             <li>
               <a
                 href="../ContactPage/contactpage.html"
                 class="hover:underline text-lg"
-                >Contato</a
               >
+                Contato
+              </a>
             </li>
           </ul>
         </div>
 
-        <div>
+        <div
+          class="flex flex-col items-center md:items-start text-center md:text-left"
+        >
           <h4 class="mb-3 text-2xl font-semibold text-stone-950">
             Redes sociais
           </h4>
-          <div class="flex space-x-6">
+          <div
+            class="flex justify-center md:justify-start space-x-6"
+            id="social-medias"
+          >
             <a
               href="https://github.com/ThurSes"
               class="text-stone-950 hover:text-blue-500 text-4xl"
@@ -142,7 +174,7 @@
             </a>
             <a
               href="https://instagram.com"
-              class="text-stone-950 text-4xl hover:text-pink-500"
+              class="text-stone-950 hover:text-pink-500 text-4xl"
             >
               <i class="fa-brands fa-instagram"></i>
             </a>
@@ -150,5 +182,6 @@
         </div>
       </div>
     </footer>
+    <script src="./homepage.js"></script>
   </body>
 </html>
