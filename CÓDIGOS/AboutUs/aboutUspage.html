@@ -18,7 +18,7 @@
   </head>
   <body>
     <header id="header">
-      <nav class="bg-white p-2px w-full rounded-lg" id="navbar">
+      <nav class="bg-white p-5 md:p-0 w-full rounded-lg" id="navbar">
         <div class="container mx-auto flex justify-between items-center">
           <a href="CÓDIGOS/HomePage/homepage.html"
             ><img
@@ -64,18 +64,18 @@
       </nav>
     </header>
     <section class="bg-slate-900">
-      <h1 class="text-center text-3xl font-bold text-zinc-100 pt-10">
+      <h1 class=" text-center text-6xl font-bold text-zinc-100 pt-10 mb-16">
         Sobre nós
       </h1>
-      <div class="flex justify-around items-center pr-30 pl-30">
+      <div class="flex justify-around items-center pr-30 pl-30 flex-col lg:flex-row">
         <img
-          class="h-75 w-75 bg-zinc-100 border-solid border-blue-400 rounded-full mt-20 mr-20"
+          class="h-75 w-75 bg-zinc-100 border-solid border-blue-400 rounded-full lg:mt-20 lg:mr-20"
           src="../../IMAGENS/travelIcon.svg"
           alt="Imagem mulher viajando"
         />
-        <div class="flex flex-col">
-          <h3 class="font-semibold text-zinc-100 text-2xl">Missão</h3>
-          <p class="font-normal text-zinc-100 text-justify">
+        <div class="flex flex-col my-10">
+          <h3 class="font-semibold text-center mb-5 text-zinc-100 text-2xl lg:text-4xl">Missão</h3>
+          <p class="font-normal text-zinc-100 text-justify p-0 xl:px-10">
             A missão da Dialexus não é somente a tradução, mas sim a comunicação
             clara e objetiva não importa onde você esteja, buscamos sempre
             facilitar o diálogo e a acessibilidade do mesmo, buscamos quebrar as
@@ -87,14 +87,14 @@
       </div>
     </section>
     <section class="bg-slate-900">
-      <div class="flex justify-around items-center pr-30 pl-30">
+      <div class="flex justify-around items-center pr-30 pl-30 flex-col-reverse lg:flex-row">
         <div class="flex flex-col">
-          <h3 class="font-semibold text-zinc-100 text-2xl">Valores</h3>
-          <p class="font-normal text-zinc-100 text-justify">
+          <h3 class="font-semibold text-zinc-100 text-2xl text-center my-5 lg:text-4xl">Valores</h3>
+          <p class="font-normal text-zinc-100 text-justify p-0 xl:px-10">
             Na Dialexus, acreditamos que toda conexão começa com respeito e
             confiança. Por isso, nossos valores guiam cada decisão e cada
             interação que construímos: 
-            <ul class="text-zinc-100 list-disc list-inside">
+            <ul class="text-zinc-100 list-disc list-inside p-0 xl:px-10">
               <li>
                 Acessibilidade – Prezamos para que nossos serviços sejam
                 inclusivos e disponíveis para todos.
@@ -108,7 +108,7 @@
           </p>
         </div>
         <img
-          class="h-75 w-75 bg-zinc-100 rounded-full ml-20 mb-20"
+          class="h-75 w-75 bg-zinc-100 rounded-full lg:ml-20 lg:mb-20"
           src="../../IMAGENS/peopleIcon.svg"
           alt="Imagem pessoas conversando"
         />
@@ -117,25 +117,25 @@
     <section class="bg-slate-900 text-zinc-100 p-10">
       <p class="text-3xl text-center text-bold">Conheça nossa equipe:</p>
       <div class="flex justify-center flex-wrap">
-        <div class="font-semibold text-center flex items-center flex-col m-20">
+        <div class="font-semibold text-center flex items-center flex-col my-10 mx-10 xl:m-20">
           <img src="../../IMAGENS/ArthurFacePhoto.jpg" alt="Imagem do Arthur" class="rounded-full"/>
           <h6 class="font-semibold">Arthur Curcio</h6>
           <p class="font-normal text-sm w-90">Me chamo Arthur Curcio, tenho 15 anos, sou apaixonado por programação, mais especificamente pela parte front-end e espero fazer grandes projetos e ter sucesso na carreira.</p>
         </div>
         
-        <div class="font-semibold text-center flex items-center flex-col m-20">
+        <div class="font-semibold text-center flex items-center flex-col my-10 mx-10 xl:m-20">
           <img src="../../IMAGENS/MatheusFacePhoto.jpg" alt="Imagem do Matheus" class="rounded-full"/>
           <h6 class="font-semibold">Matheus Kenzo</h6>
           <p class="font-normal text-sm w-90">Eu sou Matheus, estudante da Etec e estou no curso de desenvolvimento de sistemas e com sorte entrar no mercado de trabalho. Gosto de T.I., e espero prosperar na área não só fazendo sites, mas ideias</p>
         </div>
 
-        <div class="font-semibold text-center flex items-center flex-col m-20">
+        <div class="font-semibold text-center flex items-center flex-col my-10 mx-10 xl:m-20">
           <img src="../../IMAGENS/RodrigoFacePhoto.jpg" alt="Imagem do Rodrigo" class="rounded-full rotate-90 mb-10"/>
           <h6 class="font-semibold">Rodrigo Pineda</h6>
           <p class="font-normal text-sm w-90">Me chamo Arthur Curcio, tenho 15 anos, sou apaixonado por programação, mais especificamente pela parte front-end e espero fazer grandes projetos e ter sucesso na carreira.</p>
         </div>
         
-        <div class="font-semibold text-center flex items-center flex-col m-20">
+        <div class="font-semibold text-center flex items-center flex-col my-10 mx-10 xl:m-20">
           <img src="../../IMAGENS/ArthurFacePhoto.jpg" alt="Imagem do Arthur" class="rounded-full"/>
           <h6 class="font-semibold">Enzo Garzon</h6>
           <p class="font-normal text-sm w-90">Me chamo Arthur Curcio, tenho 15 anos, sou apaixonado por programação, mais especificamente pela parte front-end e espero fazer grandes projetos e ter sucesso na carreira.</p>
@@ -157,7 +157,7 @@
           <img
             src="../../IMAGENS/LogoPrincipal.png"
             alt="Logo Street Communication"
-            class="w-40 h-auto mb-4"
+            class="w-40 h-auto mb-4 self-center"
           />
           <p class="text-gray-600 text-lg font-semibold">
             Viaje sem ter que se preocupar com comunicação!
@@ -209,7 +209,7 @@
         <div
           class="flex flex-col items-center md:items-start text-center md:text-left"
         >
-          <h4 class="mb-3 text-2xl font-semibold text-stone-950">
+          <h4 class="mb-3 text-2xl font-semibold self-center text-stone-950">
             Redes sociais
           </h4>
           <div
@@ -218,19 +218,19 @@
           >
             <a
               href="https://github.com/ThurSes"
-              class="text-stone-950 hover:text-blue-500 text-4xl"
+              class="text-stone-950 hover:text-blue-500 text-4xl transition-colors"
             >
               <i class="fa-brands fa-github"></i>
             </a>
             <a
               href="mailto:streetcommunication67@gmail.com"
-              class="text-stone-950 hover:text-red-500 text-4xl"
+              class="text-stone-950 hover:text-red-500 text-4xl transition-colors"
             >
               <i class="fa-brands fa-google"></i>
             </a>
             <a
               href="https://instagram.com"
-              class="text-stone-950 hover:text-pink-500 text-4xl"
+              class="text-stone-950 hover:text-pink-500 text-4xl transition-colors"
             >
               <i class="fa-brands fa-instagram"></i>
             </a>
