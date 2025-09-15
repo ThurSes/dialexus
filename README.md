@@ -11,7 +11,7 @@
 - [Construção](#construção)
   - [Ferramentas Utilizadas](#ferramentas-utilizadas)
   - [Tutorial de Acesso](#tutorial-de-acesso)
-  - [Prints](#prints)
+  - [Desafios Enfrentados](#desafios-enfrentados)
   - [Futuras Melhorias](#futuras-melhorias)
 - [Conclusão](#conclusão)
 - [Agradecimentos](#agradecimentos)
@@ -63,3 +63,5 @@ Nesse projeto, usamos as seguintes ferramentas:
 -OBS: A IA não funcionará por questões de segurança
 
 #### 2º MODO: baixando o projeto e executando localmente
+
+Abra a pasta "CÓDIGOS" e baixe a pasta, após isso, abra seu editor de código e entre na pasta "Tradutor", abra o arquivo chamado "gemini.js". Depois, entre no [site do google](https://ai.google.dev/gemini-api/docs?hl=pt-br) e pegue a chave da sua API no botão "gerar chave de API". Após isso, volte no código do arquivo gemini.js e mude 
