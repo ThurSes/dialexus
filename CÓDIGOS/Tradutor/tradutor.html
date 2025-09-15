@@ -19,7 +19,7 @@
     <!-- Navbar -->
     <nav class="bg-white p-5 md:p-0 w-full rounded-lg" id="navbar">
       <div class="container mx-auto flex justify-between items-center">
-        <a href="CÓDIGOS/HomePage/homepage.html"
+        <a href="../HomePage/homepage.html"
           ><img
             class=""
             src="../../IMAGENS/TextoDoLado.png"
@@ -65,16 +65,23 @@
       class="flex flex-col justify-center items-center w-full text-center p-30"
     >
       <div class="flex flex-row gap-5">
-        <h1 class="text-4xl font-bold mb-8 text-zinc-100" id="titulo">
-          Tradutor Dialexus . . .
+        <h1
+          class="text-4xl font-bold mb-8 text-zinc-100 text-center"
+          id="titulo"
+        >
+          Tradutor Dialexus...
         </h1>
         <div
           id="typewriter"
-          class="h-10 w-4 border-l-8 border-solid animate-pulse border-zinc-100"
+          class="max-sm:h-20 h-10 w-4 border-l-8 border-solid animate-pulse border-zinc-100"
         ></div>
       </div>
       <form name="form" class="flex flex-col gap-4 items-center transition-all">
-        <select name="formalidade" id="combobox" class="text-zinc-100 w-80">
+        <select
+          name="formalidade"
+          id="combobox"
+          class="text-zinc-100 w-80 py-5"
+        >
           <option value="" style="display: none">
             Selecione a formalidade
           </option>
@@ -84,7 +91,7 @@
         <select
           id="language"
           name="language"
-          class="text-zinc-100 rounded-sm"
+          class="text-zinc-100 rounded-sm py-5"
           required
         >
           <option class="text-slate-900" value="" style="display: none">
@@ -195,7 +202,7 @@
           type="text"
           id="frase"
           placeholder="Insira o texto a ser traduzido"
-          class="border-solid border-black w-100 h-8 bg-white text-stone-950 p-4 pl-4 pr-4 rounded-sm focus:border-none"
+          class="border-solid border-black w-100 h-8 bg-white text-stone-950 p-4 pl-4 pr-4 rounded-lg focus:border-none"
         />
         <button
           type="button"
