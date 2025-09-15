@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dialexus - Bem-vindo!</title>
+    <link rel="stylesheet" href="../HomePage/homepage.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="../../IMAGENS/Shortcut.png" type="image/x-icon" />
+  </head>
+  <body class="bg-slate-900 contain-content">
+    <!-- Navbar -->
+    <nav class="bg-white p-5 md:p-0 w-full rounded-lg" id="navbar">
+      <div class="container mx-auto flex justify-between items-center">
+        <a href="CÓDIGOS/HomePage/homepage.html"
+          ><img
+            class=""
+            src="../../IMAGENS/TextoDoLado.png"
+            style="width: 130px; height: 130px"
+            alt="Logo"
+        /></a>
+        <button id="hamburguer" class="md:hidden text-3xl">
+          <i class="fa-solid fa-bars" id="hamburguer-icon"></i>
+        </button>
+
+        <ul
+          id="nav-list"
+          class="hidden md:flex space-x-4 flex-col md:flex-row items-center transition-all duration-300"
+        >
+          <li>
+            <a href="../HomePage/homepage.html" class="px-4 hover:underline"
+              >Início</a
+            >
+          </li>
+          <li>
+            <a
+              href="../ServicePage/servicepage.html"
+              class="px-4 hover:underline"
+              >Serviços</a
+            >
+          </li>
+          <li>
+            <a href="../AboutUs/aboutUspage.html" class="px-4 hover:underline"
+              >Sobre nós</a
+            >
+          </li>
+          <li>
+            <a
+              href="../ContactPage/contactpage.html"
+              class="px-4 hover:underline"
+              >Contato</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div
+      class="flex flex-col justify-center items-center w-full text-center p-30"
+    >
+      <h1 class="text-4xl font-bold mb-8 text-zinc-100" id="#titulo">
+        Tradutor Dialexus
+      </h1>
+      <form name="form" class="flex flex-col gap-4 items-center transition-all">
+        <select name="formalidade" id="combobox" class="text-zinc-100 w-80">
+          <option value="" style="display: none">
+            Selecione a formalidade
+          </option>
+          <option value="formal" class="text-stone-950">Formal</option>
+          <option value="informal" class="text-stone-950">Informal</option>
+        </select>
+        <select
+          id="language"
+          name="language"
+          class="text-zinc-100 rounded-sm"
+          required
+        >
+          <option class="text-slate-900" value="" style="display: none">
+            Escolha o idioma
+          </option>
+          <option id="1" class="text-slate-900" value="1">
+            Inglês (English)
+          </option>
+          <option id="2" class="text-slate-900" value="2">Árabe (عربي)</option>
+          <option id="3" class="text-slate-900" value="3">
+            Catalão (Català)
+          </option>
+          <option id="4" class="text-slate-900" value="4">
+            Chinês (Simplificado) (中文简体)
+          </option>
+          <option id="5" class="text-slate-900" value="4b">
+            Chinês (Tradicional) (中文繁體)
+          </option>
+          <option id="6" class="text-slate-900" value="5">
+            Croata (Hrvatski)
+          </option>
+          <option id="7" class="text-slate-900" value="6">
+            Tcheco (Čeština)
+          </option>
+          <option id="8" class="text-slate-900" value="7">
+            Dinamarquês (Dansk)
+          </option>
+          <option id="9" class="text-slate-900" value="8">
+            Holandês (Nederlands)
+          </option>
+          <option id="10" class="text-slate-900" value="9">
+            Finlandês (Suomi)
+          </option>
+          <option id="11" class="text-slate-900" value="10">
+            Francês (Français)
+          </option>
+          <option id="12" class="text-slate-900" value="11">
+            Georgiano (ქართული)
+          </option>
+          <option id="13" class="text-slate-900" value="12">
+            Alemão (Deutsch)
+          </option>
+          <option id="14" class="text-slate-900" value="13">
+            Grego (Ελληνικά)
+          </option>
+          <option id="15" class="text-slate-900" value="14">
+            Criolo Haitiano (Kreyòl ayisyen)
+          </option>
+          <option id="16" class="text-slate-900" value="15">
+            Hebreu (עברית)
+          </option>
+          <option id="17" class="text-slate-900" value="16">
+            Hindi (हिन्दी)
+          </option>
+          <option id="18" class="text-slate-900" value="17">
+            Irlandês (Gaeilge)
+          </option>
+          <option id="19" class="text-slate-900" value="18">
+            Italiano (Italiano)
+          </option>
+          <option id="20" class="text-slate-900" value="19">
+            Japonês (日本語)
+          </option>
+          <option id="21" class="text-slate-900" value="20">
+            Coreano (한국어)
+          </option>
+          <option id="22" class="text-slate-900" value="21">
+            Norueguês (Norsk)
+          </option>
+          <option id="23" class="text-slate-900" value="22">
+            Persa (فارسی)
+          </option>
+          <option id="24" class="text-slate-900" value="23">
+            Polonês (Polski)
+          </option>
+          <option id="25" class="text-slate-900" value="24">
+            Portguês Brasileiro (Português)
+          </option>
+          <option id="26" class="text-slate-900" value="25">
+            Russo (Русский)
+          </option>
+          <option id="27" class="text-slate-900" value="26">
+            Sérvio (Српски)
+          </option>
+          <option id="28" class="text-slate-900" value="27">
+            Eslovaco (Slovenčina)
+          </option>
+          <option id="29" class="text-slate-900" value="28">
+            Esloveno (Slovensko)
+          </option>
+          <option id="30" class="text-slate-900" value="29">
+            Espanhol (Español)
+          </option>
+          <option id="31" class="text-slate-900" value="30">
+            Sueco (Svenska)
+          </option>
+          <option id="32" class="text-slate-900" value="31">
+            Thaiandês (ไทย)
+          </option>
+          <option id="33" class="text-slate-900" value="32">
+            Turco (Türkçe)
+          </option>
+          <option id="34" class="text-slate-900" value="33">
+            Ucraniano (Українська)
+          </option>
+        </select>
+        <input
+          type="text"
+          id="frase"
+          placeholder="Insira o texto a ser traduzido"
+          class="border-solid border-black w-100 h-8 bg-white text-stone-950 p-4 pl-4 pr-4 rounded-sm focus:border-none"
+        />
+        <button
+          type="button"
+          class="text-zinc-100 bg-blue-900 p-3 rounded-lg hover:bg-cyan-700 transition-colors flex items-center gap-2"
+          onclick="traduzir()"
+        >
+          <i class="fa-solid fa-paper-plane"></i>Traduzir
+        </button>
+      </form>
+      <span id="respostaGemini"></span>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-zinc-100 py-8 mt-10">
+      <div
+        class="container mx-auto flex flex-col gap-10 md:flex-row md:justify-between md:items-start px-6 pt-8"
+      >
+        <div
+          class="flex flex-col items-center md:items-start text-center md:text-left"
+        >
+          <img
+            src="../../IMAGENS/LogoPrincipal.png"
+            alt="Logo Street Communication"
+            class="w-40 h-auto mb-4 self-center"
+          />
+          <p class="text-gray-600 text-lg font-semibold">
+            Viaje sem ter que se preocupar com comunicação!
+          </p>
+        </div>
+
+        <div
+          class="flex flex-col items-center md:items-start text-center md:text-left"
+        >
+          <h4 class="mb-3 text-2xl font-semibold text-stone-950">
+            Nossas páginas
+          </h4>
+          <ul class="space-y-2 text-gray-600">
+            <li>
+              <a
+                href="../HomePage/homepage.html"
+                class="hover:underline text-lg"
+              >
+                Início
+              </a>
+            </li>
+            <li>
+              <a
+                href="../ServicePage/servicepage.html"
+                class="hover:underline text-lg"
+              >
+                Serviços
+              </a>
+            </li>
+            <li>
+              <a
+                href="../AboutUs/aboutUspage.html"
+                class="hover:underline text-lg"
+              >
+                Sobre nós
+              </a>
+            </li>
+            <li>
+              <a
+                href="../ContactPage/contactpage.html"
+                class="hover:underline text-lg"
+              >
+                Contato
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="flex flex-col items-center md:items-start text-center md:text-left"
+        >
+          <h4 class="mb-3 text-2xl font-semibold self-center text-stone-950">
+            Redes sociais
+          </h4>
+          <div
+            class="flex justify-center md:justify-start space-x-6"
+            id="social-medias"
+          >
+            <a
+              href="https://github.com/ThurSes/dialexus"
+              class="text-stone-950 hover:text-blue-500 text-4xl"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="mailto:dialexus2@gmail.com"
+              class="text-stone-950 hover:text-red-500 text-4xl"
+            >
+              <i class="fa-brands fa-google"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/dialexus._?igsh=MWJvNmhwd291aTVpMg=="
+              class="text-stone-950 text-4xl hover:text-pink-500"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./gemini.js"></script>
+    <script src="tradutor.js"></script>
+  </body>
+</html>
