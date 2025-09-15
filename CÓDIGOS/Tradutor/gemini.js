@@ -1,29 +1,4 @@
-// import { GoogleGenAI } from "@google/genai";
-// import { languages } from "./languages.js";
 
-// const ai = new GoogleGenAI({
-//   apiKey: "",
-// });
-
-// async function traduzir() {
-//   var frase = document.getElementById("frase").value;
-//   var lang = document.getElementById("language").value;
-//   var modo = document.getElementById("combobox").value;
-//   var language = languages[lang];
-//   var response = await ai.models.generateContent({
-//     model: "gemini-2.5-flash",
-//     contents:
-//       "Traduza esse texto para o " +
-//       language.name +
-//       " levando em consideração o fato de a conversa de modo" +
-//       modo +
-//       " e além de tudo traduzindo as gírias e expressões idiomáticas relativas ao contexto. Me dê somente uma resposta sem explicações nem textos antes ou depois da resposta: " +
-//       frase,
-//   });
-//   var resposta = response.text;
-//   console.log(resposta);
-//   document.getElementById("respostaGemini").textContent = response.text;
-// }
 const languages = [
   //0
   {
@@ -273,7 +248,7 @@ async function traduzir() {
   const language = languages[lang];
 
   const response = await fetch(
-    "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=AIzaSyBrFCJ5SRuZhKrp-8aDba19mYVHAtp5qsg",
+    "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=",
     {
       method: "POST",
       headers: { "Content-Type": "application/json" },
