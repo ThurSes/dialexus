@@ -51,6 +51,7 @@ Nesse projeto, usamos as seguintes ferramentas:
 - CSS3 para animações e estilizações
 - JS para a funcionalidade da página
 - [Tailwind CSS](https://tailwindcss.com/) - Framework CSS
+- [Gemini API](https://ai.google.dev/gemini-api/docs?hl=pt-br) - IA do google
 - [Form Submit](https://formsubmit.co/) - Biblioteca de envio de formulários
 - [Sweet Alert](https://sweetalert2.github.io) - Biblioteca Javascript
 - [Font Awesome](https://fontawesome.com/) - Biblioteca para icones
@@ -64,4 +65,23 @@ Nesse projeto, usamos as seguintes ferramentas:
 
 #### 2º MODO: baixando o projeto e executando localmente
 
-Abra a pasta "CÓDIGOS" e baixe a pasta, após isso, abra seu editor de código e entre na pasta "Tradutor", abra o arquivo chamado "gemini.js". Depois, entre no [site do google](https://ai.google.dev/gemini-api/docs?hl=pt-br) e pegue a chave da sua API no botão "gerar chave de API". Após isso, volte no código do arquivo gemini.js e mude 
+Abra a pasta "CÓDIGOS" e baixe a pasta, após isso, abra seu editor de código e entre na pasta "Tradutor", abra o arquivo chamado "gemini.js". Depois, entre no [site do google](https://ai.google.dev/gemini-api/docs?hl=pt-br) e pegue a chave da sua API no botão "gerar chave de API". Após isso, volte no código do arquivo gemini.js e coloque na linha 250 no fim dela, onde está escrito "key=" coloque após isso a sua chave da API. Agora é só rodar o código "tradutor.html" e aproveitar o tradutor da Dialexus.
+
+### Desafios Enfrentados
+
+- O gemini é muito complexo de se mecher, nele ocorrem muitos erros, porém conseguimos superá-los
+- Sofremos um pouco na parte de tornar o site responsivo
+
+### Futuras Melhorias
+
+Daqui pra frente, nós vamos adicionar a parte de voz do tradutor para aumentar ainda mais a inclusão e acessibilidade. Nessa funcionalidade nova, o usuário poderá gravar um aúdio que será convertido para texto e, logo em seguida, traduzido para o idioma selecionado anteriormente.
+
+## Conclusão
+
+Com o desenvolvimento do Dialexus, conseguimos colocar em prática nossos conhecimentos técnicos e criar uma solução que busca ir além dos tradutores tradicionais, oferecendo uma proposta voltada para o entendimento de gírias e expressões idiomáticas. Durante o processo, enfrentamos desafios, principalmente na integração da API de IA e na adaptação do site para diferentes dispositivos, mas essas dificuldades contribuíram para o nosso aprendizado e evolução como desenvolvedores.
+
+Apesar de ainda estar em fase inicial, o projeto já demonstra seu potencial de impacto, mostrando como a tecnologia pode aproximar pessoas de diferentes culturas e facilitar a comunicação no dia a dia. Acreditamos que, com as futuras melhorias planejadas, como a inclusão da tradução por voz, o Dialexus poderá se tornar ainda mais acessível, prático e inclusivo, cumprindo seu objetivo de ajudar pessoas a se comunicarem melhor em um mundo cada vez mais globalizado.
+
+## Agradecimentos
+
+Nós, da Dialexus, gostaríamos de agradecer aos nossos familiares e à todas as pessoas que deram suporte ao nosso grupo. E, mais especificamente, ao Professor Luis Carlos dos Santos, ou LC para os mais próximos, por sempre tirar nossas maiores dúvidas e sempre nos apoiar e à Professora Rosinha, outra pessoa também que nos apoiou muito no projeto e nos incentivou a darmos nosso melhor nele.
