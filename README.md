@@ -55,11 +55,12 @@ Nesse projeto, usamos as seguintes ferramentas:
 - [Form Submit](https://formsubmit.co/) - Biblioteca de envio de formulários
 - [Sweet Alert](https://sweetalert2.github.io) - Biblioteca Javascript
 - [Font Awesome](https://fontawesome.com/) - Biblioteca para icones
-- [Undraw](https://undraw.co) - Biblioteca para ícones
+- [Undraw](https://undraw.co) - Biblioteca para ícones e imagens
 
 ### Tutorial de acesso
 
 #### 1º MODO: via link do GitHub Pages:
+
 [Disponível aqui](https://thurses.github.io/dialexus/)
 -OBS: A IA não funcionará por questões de segurança
 

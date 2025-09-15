@@ -6,7 +6,7 @@
   z-index: -1;
 }
 
-.circles {
+#circles {
   position: absolute;
   top: 0;
   left: 0;

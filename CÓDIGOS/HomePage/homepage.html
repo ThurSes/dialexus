@@ -10,13 +10,7 @@
     <link rel="icon" href="../../IMAGENS/Shortcut.png" type="image/x-icon" />
   </head>
   <body class="bg-slate-900 contain-content">
-    <!-- 
-     primaria = slate-900 
-     secondary = blue-500 
-     terciaria = cyan-400 
-     fundo = zinc-100 
-     text = stone-950 
-     -->
+     <!-- Navbar -->
     <header id="header">
       <nav class="bg-white p-5 md:p-0 w-full rounded-lg" id="navbar">
         <div class="container mx-auto flex justify-between items-center">
@@ -63,6 +57,7 @@
         </div>
       </nav>
     </header>
+    <ul id="circles"></ul>
       <li class="circle circle1"></li>
       <li class="circle circle2"></li>
       <li class="circle circle3"></li>
@@ -75,21 +70,35 @@
       <li class="circle circle10"></li>
     </ul>
     <section class="bg-slate-900 text-white py-20 pb-40">
-      <div class="container mx-auto flex flex-col md:flex-row items-center ">
-        <div class="md:w-1/2 text-center md:text-left md:mb-0 px-6">
-          <h1 class="text-7xl font-extrabold leading-tight mb-6 mt-26 pt-20">
-            Dialexus
-          </h1>
-          <p class="text-2xl mb-8">Viaje sem ter que se preocupar</p>
-          <a
-            href="../ServicePage/servicepage.html"
-            class="bg-blue-500 text-white font-semibold px-8 py-5 rounded-md shadow"
-          >
-            Descubra nossos serviços
-          </a>
+  <div class="container mx-auto flex flex-col md:flex-row items-center px-6">
+    <div class="w-full md:w-3/4 text-center md:text-left">
+      <h1 class="text-7xl font-extrabold leading-tight mb-6 mt-26 pt-20">
+        Dialexus
+      </h1>
+      <p class="text-2xl mb-8">
+        Viaje sem ter que se preocupar com comunicação
+      </p>
+      <a
+        href="../ServicePage/servicepage.html"
+        class="bg-blue-500 text-white font-semibold px-8 py-5 rounded-md shadow"
+      >
+        Descubra nossos serviços
+      </a>
+    </div>
+
+    <div class="w-full md:w-1/2 flex justify-center mt-8 md:mt-0">
+          <img
+            src="../../IMAGENS/globo.svg"
+            alt="Ilustração de um globo"
+            class="w-3/4 md:w-full max-w-sm lg:mt-16"
+          />
         </div>
       </div>
     </section>
+
+    
+      
+
     <!-- Footer -->
     <footer class="bg-zinc-100 py-8 mt-10">
       <div
@@ -160,20 +169,20 @@
             class="flex justify-center md:justify-start space-x-6"
             id="social-medias"
           >
-            <a
-              href="https://github.com/ThurSes/dialexus"
+            <a title="github"
+              href="https://github.com/ThurSes"
               class="text-stone-950 hover:text-blue-500 text-4xl"
             >
               <i class="fa-brands fa-github"></i>
             </a>
-            <a
-              href="mailto:dialexus2@gmail.com"
+            <a title="email"
+              href="mailto:streetcommunication67@gmail.com"
               class="text-stone-950 hover:text-red-500 text-4xl"
             >
               <i class="fa-brands fa-google"></i>
             </a>
-            <a
-              href="https://www.instagram.com/dialexus._?igsh=MWJvNmhwd291aTVpMg=="
+            <a title="instagram"
+              href="https://instagram.com"
               class="text-stone-950 text-4xl hover:text-pink-500"
             >
               <i class="fa-brands fa-instagram"></i>
