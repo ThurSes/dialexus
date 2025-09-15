@@ -2,7 +2,7 @@
 // import { languages } from "./languages.js";
 
 // const ai = new GoogleGenAI({
-//   apiKey: "AIzaSyBrFCJ5SRuZhKrp-8aDba19mYVHAtp5qsg",
+//   apiKey: "",
 // });
 
 // async function traduzir() {
