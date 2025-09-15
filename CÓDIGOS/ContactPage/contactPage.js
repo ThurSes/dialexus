@@ -2,7 +2,7 @@ function enviarForm() {
   const form = document.getElementById("formContato");
   const formData = new FormData(form);
 
-  fetch("https://formsubmit.co/ajax/street.communication67@gmail.com", {
+  fetch("https://formsubmit.co/ajax/dialexus2@gmail.com", {
     method: "POST",
     body: formData,
   })

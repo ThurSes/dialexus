@@ -64,9 +64,15 @@
     <div
       class="flex flex-col justify-center items-center w-full text-center p-30"
     >
-      <h1 class="text-4xl font-bold mb-8 text-zinc-100" id="#titulo">
-        Tradutor Dialexus
-      </h1>
+      <div class="flex flex-row gap-5">
+        <h1 class="text-4xl font-bold mb-8 text-zinc-100" id="titulo">
+          Tradutor Dialexus . . .
+        </h1>
+        <div
+          id="typewriter"
+          class="h-10 w-4 border-l-8 border-solid animate-pulse border-zinc-100"
+        ></div>
+      </div>
       <form name="form" class="flex flex-col gap-4 items-center transition-all">
         <select name="formalidade" id="combobox" class="text-zinc-100 w-80">
           <option value="" style="display: none">
@@ -199,7 +205,11 @@
           <i class="fa-solid fa-paper-plane"></i>Traduzir
         </button>
       </form>
-      <span id="respostaGemini"></span>
+      <span
+        id="respostaGemini"
+        class="font-semibold text-center text-stone-950 m-5 p-2 xl:px-10 bg-cyan-400 rounded-3xl"
+        >resultado da tradução</span
+      >
     </div>
     <!-- Footer -->
     <footer class="bg-zinc-100 py-8 mt-10">
