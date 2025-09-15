@@ -5,69 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dialexus - Bem-vindo!</title>
     <link rel="stylesheet" href="CÓDIGOS/HomePage/homepage.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="icon" type="image/png" href="./IMAGENS/Shortcut.png" />
-    <style>
-      .circle-wrapper {
-        position: relative;
-        width: 100%;
-        height: auto;
-      }
-      .circle {
-        position: absolute;
-        bottom: -500px;
-        opacity: 0;
-        animation: subir 2s ease-out forwards infinite;
-        animation-delay: 2s;
-      }
-
-      .circle1 {
-        animation-delay: 1s;
-      }
-      .circle2 {
-        animation-delay: 1.5s;
-      }
-      .circle3 {
-        animation-delay: 2s;
-      }
-      .circle4 {
-        animation-delay: 2.5s;
-      }
-      .circle5 {
-        animation-delay: 3s;
-      }
-      .circle6 {
-        animation-delay: 3.5s;
-      }
-      .circle7 {
-        animation-delay: 4s;
-      }
-      .circle8 {
-        animation-delay: 4.5s;
-      }
-      .circle9 {
-        animation-delay: 5s;
-      }
-      .circle10 {
-        animation-delay: 0.5s;
-      }
-
-      @keyframes subir {
-        to {
-          bottom: 50px; /* ou onde você quer que eles fiquem */
-          opacity: 1;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="IMAGENS/Shortcut.png" type="image/x-icon" />
   </head>
-  <body style="min-height: 100vh">
+  <body>
     <!-- 
      primaria = slate-900 
      secondary = blue-500 
@@ -75,54 +17,65 @@
      fundo = zinc-100 
      text = stone-950 
      -->
-    <nav class="bg-white p-2px w-full rounded-lg">
-      <div class="container mx-auto flex justify-between items-center">
-        <a href="CÓDIGOS/HomePage/homepage.html"
-          ><img
-            class=""
-            src="./IMAGENS/TextoDoLado.png"
-            style="width: 130px; height: 130px"
-            alt="Logo"
-        /></a>
-        <div>
-          <a href="CÓDIGOS/HomePage/homepage.html" class="px-4 hover:underline"
-            >Início</a
-          >
-          <a
-            href="CÓDIGOS/ServicePage/servicepage.html"
-            class="px-4 hover:underline"
-            >Produtos e serviços</a
-          >
-          <a
-            href="CÓDIGOS/AboutUs/aboutUspage.html"
-            class="px-4 hover:underline"
-            >Sobre nós</a
-          >
-          <a
-            href="CÓDIGOS/ContactPage/contactpage.html"
-            class="px-4 hover:underline"
-            >Contato</a
-          >
-        </div>
-      </div>
-    </nav>
-    <div class="circle-wrapper relative">
-      <ul class="absolute top-0 left-0 w-full h-full">
-        <li class="circle circle1"></li>
-        <li class="circle circle2"></li>
-        <li class="circle circle3"></li>
-        <li class="circle circle4"></li>
-        <li class="circle circle5"></li>
-        <li class="circle circle6"></li>
-        <li class="circle circle7"></li>
-        <li class="circle circle8"></li>
-        <li class="circle circle9"></li>
-        <li class="circle circle10"></li>
-      </ul>
-    </div>
+    <header id="header">
+      <nav class="bg-white p-5 md:p-0 w-full rounded-lg" id="navbar">
+        <div class="container mx-auto flex justify-between items-center">
+          <a href="CÓDIGOS/HomePage/homepage.html"
+            ><img
+              class=""
+              src="IMAGENS/TextoDoLado.png"
+              style="width: 130px; height: 130px"
+              alt="Logo"
+          /></a>
+          <button id="hamburguer" class="md:hidden text-3xl">
+            <i class="fa-solid fa-bars" id="hamburguer-icon"></i>
+          </button>
 
-    <section class="bg-slate-900 text-white py-20">
-      <div class="container mx-auto flex flex-col md:flex-row items-center">
+          <ul
+            id="nav-list"
+            class="hidden md:flex space-x-4 flex-col md:flex-row items-center transition-all duration-300"
+          >
+            <li>
+              <a href="CÓDIGOS/HomePage/homepage.html" class="px-4 hover:underline"
+                >Início</a
+              >
+            </li>
+            <li>
+              <a
+                href="CÓDIGOS/ServicePage/servicepage.html"
+                class="px-4 hover:underline"
+                >Produtos e serviços</a
+              >
+            </li>
+            <li>
+              <a href="CÓDIGOS/AboutUs/aboutUspage.html" class="px-4 hover:underline"
+                >Sobre nós</a
+              >
+            </li>
+            <li>
+              <a
+                href="CÓDIGOS/ContactPage/contactpage.html"
+                class="px-4 hover:underline"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+      <li class="circle circle1"></li>
+      <li class="circle circle2"></li>
+      <li class="circle circle3"></li>
+      <li class="circle circle4"></li>
+      <li class="circle circle5"></li>
+      <li class="circle circle6"></li>
+      <li class="circle circle7"></li>
+      <li class="circle circle8"></li>
+      <li class="circle circle9"></li>
+      <li class="circle circle10"></li>
+    </ul>
+    <section class="bg-slate-900 text-white py-20 pb-40">
+      <div class="container mx-auto flex flex-col md:flex-row items-center ">
         <div class="md:w-1/2 text-center md:text-left md:mb-0 px-6">
           <h1 class="text-7xl font-extrabold leading-tight mb-6 mt-26 pt-20">
             Dialexus
@@ -139,78 +92,89 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-zinc-100 mt-10">
+    <footer class="bg-zinc-100 py-8 mt-10">
       <div
-        class="container mx-auto flex flex-col md:flex-row justify-between items-center pt-8"
+        class="container mx-auto flex flex-col gap-10 md:flex-row md:justify-between md:items-start px-6 pt-8"
       >
-        <div class="flex flex-col items-center md:items-start">
+        <div
+          class="flex flex-col items-center md:items-start text-center md:text-left"
+        >
           <img
-            src="./IMAGENS/LogoPrincipal.png"
+            src="IMAGENS/LogoPrincipal.png"
             alt="Logo Street Communication"
-            class="w-40 h-auto ml-30"
+            class="w-40 h-auto mb-4 self-center"
           />
-          <p
-            class="text-center md:text-left text-gray-600 text-lg font-semibold"
-          >
+          <p class="text-gray-600 text-lg font-semibold">
             Viaje sem ter que se preocupar com comunicação!
           </p>
         </div>
 
-        <div class="self-center">
+        <div
+          class="flex flex-col items-center md:items-start text-center md:text-left"
+        >
           <h4 class="mb-3 text-2xl font-semibold text-stone-950">
             Nossas páginas
           </h4>
           <ul class="space-y-2 text-gray-600">
             <li>
               <a
-                href="../HomePage/homepage.html"
+                href="CÓDIGOS/HomePage/homepage.html"
                 class="hover:underline text-lg"
-                >Início</a
               >
+                Início
+              </a>
             </li>
             <li>
               <a
-                href="../ServicePage/servicepage.html"
+                href="CÓDIGOS/ServicePage/servicepage.html"
                 class="hover:underline text-lg"
-                >Produtos e serviços</a
               >
+                Produtos e serviços
+              </a>
             </li>
             <li>
               <a
-                href="../AboutUs/aboutUspage.html"
+                href="CÓDIGOS/AboutUs/aboutUspage.html"
                 class="hover:underline text-lg"
-                >Sobre nós</a
               >
+                Sobre nós
+              </a>
             </li>
             <li>
               <a
-                href="../ContactPage/contactpage.html"
+                href="CÓDIGOS/ContactPage/contactpage.html"
                 class="hover:underline text-lg"
-                >Contato</a
               >
+                Contato
+              </a>
             </li>
           </ul>
         </div>
 
-        <div>
-          <h4 class="mb-3 text-2xl font-semibold text-stone-950">
+        <div
+          class="flex flex-col items-center md:items-start text-center md:text-left"
+        >
+          <h4 class="mb-3 text-2xl font-semibold self-center text-stone-950">
             Redes sociais
           </h4>
-          <div class="flex">
+          <div
+            class="flex justify-center md:justify-start space-x-6"
+            id="social-medias"
+          >
             <a
-              href="https://github.com/ThurSes/dialexus"
+              href="https://github.com/ThurSes"
               class="text-stone-950 hover:text-blue-500 text-4xl"
             >
               <i class="fa-brands fa-github"></i>
             </a>
             <a
-              href="mailto:dialexus2@gmail.com"
+              href="mailto:streetcommunication67@gmail.com"
               class="text-stone-950 hover:text-red-500 text-4xl"
             >
               <i class="fa-brands fa-google"></i>
             </a>
             <a
-              href="https://www.instagram.com/dialexus._?igsh=MWJvNmhwd291aTVpMg=="
+              href="https://instagram.com"
               class="text-stone-950 text-4xl hover:text-pink-500"
             >
               <i class="fa-brands fa-instagram"></i>
@@ -219,5 +183,6 @@
         </div>
       </div>
     </footer>
+    <script src="CÓDIGOS/HomePage/homepage.js"></script>
   </body>
 </html>

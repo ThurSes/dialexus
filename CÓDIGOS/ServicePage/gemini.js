@@ -7,7 +7,7 @@ const ai = new GoogleGenAI({
 
 async function main() {
   var frase = "no way mf got packed, ref do something!";
-  var i = 24;
+  var i = 42;
   var modo = "informal";
   var language = languages[i];
   var response = await ai.models.generateContent({
