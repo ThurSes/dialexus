@@ -20,10 +20,10 @@
 
 ### Autores
 
-Arthur Curcio de Campos Miranda
-Enzo Raphael Oliveira Garzon
-Matheus Kenzo Kobori Barres
-Rodrigo Perez Oliveira Pineda
+-Arthur Curcio de Campos Miranda
+-Enzo Raphael Oliveira Garzon
+-Matheus Kenzo Kobori Barres
+-Rodrigo Perez Oliveira Pineda
 
 ### ETEC
 
@@ -31,7 +31,7 @@ ETEC Lauro Gomes
 
 ### Nome do Projeto
 
-Street Communication - Tradutor de gírias
+Dialexus - Tradutor de gírias
 
 ### Problematização
 
@@ -39,7 +39,7 @@ Hoje em dia, com o mundo globalizado a informação percorre o mundo rapidamente
 
 ### Objetivo
 
-O nosso objetivo com a Street Communication é fazer um tradutor que entenda gírias, permita o usuário usar aúdios para a entrada de dados e que seja de fácil acesso para as pessoas, já que foi planejado para que seja utilizados em viagens, permitindo a comunicação com pesssoas nativas sem problemas de entendimento devido à alta quantidade de gírias.
+O nosso objetivo com a Dialexus é fazer um tradutor que entenda gírias, permita o usuário usar aúdios para a entrada de dados e que seja de fácil acesso para as pessoas, já que foi planejado para que seja utilizados em viagens, permitindo a comunicação com pesssoas nativas sem problemas de entendimento devido à alta quantidade de gírias.
 
 ## Construção
 
@@ -58,4 +58,8 @@ Nesse projeto, usamos as seguintes ferramentas:
 
 ### Tutorial de acesso
 
+#### 1º MODO: via link do GitHub Pages:
 [Disponível aqui](https://thurses.github.io/dialexus/)
+-OBS: A IA não funcionará por questões de segurança
+
+#### 2º MODO: baixando o projeto e executando localmente
