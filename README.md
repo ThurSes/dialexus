@@ -69,7 +69,7 @@ Abra a pasta "CÓDIGOS" e baixe a pasta, após isso, abra seu editor de código 
 
 ### Desafios Enfrentados
 
-- O gemini é muito complexo de se mecher, nele ocorrem muitos erros, porém conseguimos superá-los
+- O gemini é muito complexo de se mexer, nele ocorrem muitos erros, porém conseguimos superá-los
 - Sofremos um pouco na parte de tornar o site responsivo
 
 ### Futuras Melhorias
