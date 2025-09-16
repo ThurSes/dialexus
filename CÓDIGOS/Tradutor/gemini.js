@@ -238,73 +238,6 @@ const languages = [
     code: "uk",
   },
 ];
-
-// async function traduzir() {
-//   const lang = document.getElementById("language").value;
-//   const translateLang = document.getElementById("translateLang").value;
-//   const frase = document.getElementById("frase").value;
-//   const modo = document.getElementById("combobox").value;
-//   const span = document.getElementById("span");
-
-//   var promptTraduzir = "";
-
-//   const translateLanguage = languages[translateLang].name;
-//   const language = languages[lang].name;
-
-//   if (modo === "informal") {
-//     promptTraduzir =
-//       "Você é um tradutor especialista em linguagem coloquial.  Sua tarefa é traduzir o seguinte texto do " +
-//       language +
-//       " para o " +
-//       translateLanguage +
-//       ".  Mantenha a tradução em um estilo informal, como se fosse uma conversa entre amigos, preservando gírias, expressões populares e tom natural.  Se alguma gíria não tiver equivalente direto no " +
-//       translateLanguage +
-//       ", adapte para uma expressão equivalente usada nesse idioma. IMPORTANTE: responda SOMENTE com a frase traduzida, sem explicações adicionais. Texto: " +
-//       frase;
-//   } else if (modo === "formal") {
-//     promptTraduzir =
-//       "Você é um tradutor profissional altamente qualificado.  Sua tarefa é traduzir o seguinte texto do " +
-//       language +
-//       " para o " +
-//       translateLanguage +
-//       ".  Mantenha a tradução em um estilo formal, adequado para documentos oficiais, apresentações acadêmicas ou profissionais.  Adapte expressões idiomáticas e gírias para equivalentes mais cultos no " +
-//       translateLanguage +
-//       ".IMPORTANTE: responda SOMENTE com a frase traduzida, sem explicações adicionais.  Texto: " +
-//       frase;
-//   }
-//   console.log(modo);
-//   console.log(translateLanguage);
-//   console.log(language);
-//   console.log(promptTraduzir);
-//   const response = await fetch(
-//     "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBrFCJ5SRuZhKrp-8aDba19mYVHAtp5qsg",
-//     {
-//       method: "POST",
-//       headers: { "Content-Type": "application/json" },
-//       body: JSON.stringify({
-//         contents: [
-//           {
-//             parts: [
-//               {
-//                 text: promptTraduzir,
-//               },
-//             ],
-//           },
-//         ],
-//       }),
-//     }
-//   );
-//   span.innerHTML = `<span
-//     id="respostaGemini"
-//     class="font-semibold text-center text-stone-950 m-5 p-2 xl:px-10 bg-cyan-400 rounded-3xl"
-//   >
-//     Resultado da tradução
-//   </span>;`;
-
-//   const data = await response.json();
-//   document.getElementById("respostaGemini").textContent =
-//     data.candidates[0].content.parts[0].text;
-// }
 async function traduzir() {
   const lang = document.getElementById("language").value;
   const translateLang = document.getElementById("translateLang").value;
@@ -342,7 +275,7 @@ async function traduzir() {
 
   try {
     const response = await fetch(
-      "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyBrFCJ5SRuZhKrp-8aDba19mYVHAtp5qsg",
+      "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
