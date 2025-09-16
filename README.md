@@ -83,7 +83,7 @@ Daqui pra frente, nós vamos adicionar a parte de voz do tradutor para aumentar 
 
 Com o desenvolvimento do Dialexus, conseguimos colocar em prática nossos conhecimentos técnicos e criar uma solução que busca ir além dos tradutores tradicionais, oferecendo uma proposta voltada para o entendimento de gírias e expressões idiomáticas. Durante o processo, enfrentamos desafios, principalmente na integração da API de IA e na adaptação do site para diferentes dispositivos, mas essas dificuldades contribuíram para o nosso aprendizado e evolução como desenvolvedores.
 
-Apesar de ainda estar em fase inicial, o projeto já demonstra seu potencial de impacto, mostrando como a tecnologia pode aproximar pessoas de diferentes culturas e facilitar a comunicação no dia a dia. Acreditamos que, com as futuras melhorias planejadas, como a inclusão da tradução por voz, o Dialexus poderá se tornar ainda mais acessível, prático e inclusivo, cumprindo seu objetivo de ajudar pessoas a se comunicarem melhor em um mundo cada vez mais globalizado.
+Apesar de ainda estar em fase inicial, o projeto já demonstra seu potencial de impacto, mostrando como a tecnologia pode aproximar pessoas de diferentes culturas e facilitar a comunicação no dia a dia. Acreditamos que, com as futuras melhorias planejadas, como a inclusão da tradução por voz, a Dialexus poderá se tornar ainda mais acessível, prática e inclusiva, cumprindo seu objetivo de ajudar pessoas a se comunicarem melhor em um mundo cada vez mais globalizado.
 
 ## Agradecimentos
 
