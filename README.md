@@ -66,8 +66,6 @@ Nesse projeto, usamos as seguintes ferramentas:
 
 #### 2º MODO: baixando o projeto e executando localmente
 
-#####Baixando o projeto e executando localmente
-
 Abra a pasta "CÓDIGOS" e baixe a pasta, após isso, abra seu editor de código e entre na pasta "Tradutor", abra o arquivo chamado "gemini.js". Depois, entre no [site do google](https://ai.google.dev/gemini-api/docs?hl=pt-br) e pegue a chave da sua API no botão "gerar chave de API". Após isso, volte no código do arquivo gemini.js e coloque na linha 250 no fim dela, onde está escrito "key=" coloque após isso a sua chave da API. Agora é só rodar o código "tradutor.html" e aproveitar o tradutor da Dialexus.
 
 ### Desafios Enfrentados
