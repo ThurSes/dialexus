@@ -269,7 +269,6 @@ async function traduzir() {
       frase;
   }
 
-  // Mostra o loader e limpa resposta antiga
   loader.classList.remove("hidden");
   span.innerHTML = "";
 
@@ -308,7 +307,7 @@ async function traduzir() {
       '<span class="text-red-500 font-semibold">Erro ao traduzir. Tente novamente.</span>';
     console.error(error);
   } finally {
-    // Esconde o loader sempre no final
+    
     loader.classList.add("hidden");
   }
 }
